@@ -6,6 +6,7 @@ import ButtonCta from './buttonsIndicators/buttonCta'
 import ButtonGhost from './buttonsIndicators/buttonGhost'
 import ButtonPrimary from './buttonsIndicators/buttonPrimary'
 import ButtonSecondary from './buttonsIndicators/buttonSecondary'
+import Input from './formControls/input'
 import Checkbox from './formControls/checkbox'
 import Modal from './popupModals/modal'
 import Select from './formControls/select'
@@ -24,6 +25,7 @@ export {
   Checkbox,
   Column,
   Grid,
+  Input,
   Modal,
   Select,
   Table,

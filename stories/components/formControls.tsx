@@ -12,7 +12,7 @@ import { withState } from '@dump247/storybook-state'
 import centered from '@storybook/addon-centered/dist'
 
 // Components
-import { Toggle, Select, Checkbox, TextArea } from '../../src/components'
+import { Toggle, Select, Checkbox, TextArea, Input } from '../../src/components'
 
 storiesOf('Components/Form controls', module)
   .addDecorator(withKnobs)
@@ -78,6 +78,18 @@ storiesOf('Components/Form controls', module)
       <TextArea
         defaultValue={text('Value', store.state.defaultValue)}
         title={text('Title', 'Recovery keys')}
+        onChange={onChange}
+      />
+    )
+  }))
+  .add('Input', withState({ defaultValue: '' }, (store) => {
+    const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+      store.set({ defaultValue: event.target.value })
+    }
+    return (
+      <Input
+        defaultValue={text('Value', store.state.defaultValue)}
+        title={text('Title', 'Device name')}
         onChange={onChange}
       />
     )
