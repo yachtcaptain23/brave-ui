@@ -22,16 +22,12 @@ storiesOf('Components/Text', module)
     const options = {
       range: true,
       min: 1,
-      max: 3,
+      max: 6,
       step: 1
     }
     return (
       <Heading
         level={number(label, defaultValue, options)}
-        theme={{
-          color: text('Color', ''),
-          margin: text('Margin', '')
-        }}
         text={text('Text', 'Heading on fire')}
       />
     )

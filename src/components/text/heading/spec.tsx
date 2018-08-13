@@ -6,7 +6,7 @@ import Heading from './index'
 
 describe('all heading tests', () => {
   const baseHeadingComponent = (props?: object) => (
-    <Heading id='testHeading' {...props} />
+    <Heading testId='testHeading' {...props} />
   )
   describe('heading tests', () => {
     describe('basic tests', () => {
@@ -17,19 +17,13 @@ describe('all heading tests', () => {
       })
 
       it('renders the component', () => {
-        const wrapper = shallow(baseHeadingComponent({id: 'toughTitleHeading'}))
-        const assertion = wrapper.find('#toughTitleHeading').length
-        expect(assertion).toBe(1)
+        const wrapper = shallow(baseHeadingComponent({testId: 'toughTitleHeading'}))
+        const assertion = wrapper.props()['data-test-id']
+        expect(assertion).toBe('toughTitleHeading')
       })
     })
 
     describe('component behavior', () => {
-      it('can have an id', () => {
-        const wrapper = shallow(baseHeadingComponent({id: 'titleHeadingThing'}))
-        const assertion = wrapper.props().id
-        expect(assertion).toBe('titleHeadingThing')
-      })
-
       it('can be an h1 when level === 1', () => {
         const wrapper = shallow(baseHeadingComponent({level: 1}))
         const assertion = wrapper.html().includes('h1')
@@ -55,7 +49,8 @@ describe('all heading tests', () => {
       })
     })
 
-    describe('theming', () => {
+    // POSSIBLE PROPS TO THE COMPONENT TBD
+    describe.skip('theming', () => {
       it('allows theming the `color` property', () => {
         const component = baseHeadingComponent({theme: { color: 'orange' } })
         const tree = create(component).toJSON()
