@@ -31,7 +31,7 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
   text-transform: uppercase;
 }
 
-.c14 {
+.c15 {
   font-size: 12px;
   color: #686978;
   margin-top: 26px;
@@ -43,7 +43,7 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
   cursor: pointer;
 }
 
-.c15 {
+.c16 {
   vertical-align: sub;
   margin-right: 11px;
 }
@@ -73,7 +73,7 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
   font-family: Poppins,sans-serif;
 }
 
-.c12 {
+.c13 {
   position: relative;
   display: -webkit-box;
   display: -webkit-flex;
@@ -129,6 +129,34 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
 }
 
 .c6 {
+  --tokens-value-color: #c12d7c;
+  --tokens-text-size: 12px;
+  --tokens-token-size: 14px;
+  --tokens-tokenNum-size: 16px;
+}
+
+.c11 {
+  --tokens-value-color: #9752cb;
+  --tokens-text-size: 12px;
+  --tokens-token-size: 14px;
+  --tokens-tokenNum-size: 16px;
+}
+
+.c12 {
+  --tokens-value-color: #696fdc;
+  --tokens-text-size: 12px;
+  --tokens-token-size: 14px;
+  --tokens-tokenNum-size: 16px;
+}
+
+.c14 {
+  --tokens-value-color: #4b4c5c;
+  --tokens-text-size: 12px;
+  --tokens-token-size: 14px;
+  --tokens-tokenNum-size: 16px;
+}
+
+.c7 {
   font-family: Poppins,sans-serif;
   font-weight: 300;
   line-height: 1.4;
@@ -136,41 +164,23 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
   display: inline-block;
 }
 
-.c7 {
-  color: #c12d7c;
-  font-size: 16px;
+.c8 {
+  color: var(--tokens-value-color);
+  font-size: var(--tokens-tokenNum-size);
   font-weight: 500;
 }
 
 .c10 {
-  color: #9752cb;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.c11 {
-  color: #696fdc;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.c13 {
-  color: #4b4c5c;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.c9 {
   color: #9E9FAB;
-  font-size: 12px;
+  font-size: var(--tokens-text-size);
   font-family: Muli,sans-serif;
   line-height: 1.29;
   display: inline-block;
   margin-left: 10px;
 }
 
-.c8 {
-  font-size: 14px;
+.c9 {
+  font-size: var(--tokens-token-size);
   font-weight: 300;
   display: inline-block;
   margin-left: 4px;
@@ -205,36 +215,35 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
       <div
         className="c5"
       >
-        <span
+        <div
+          className="c6"
+          color="earnings"
           id={undefined}
+          size="normal"
         >
           <span
-            className="c6"
+            className="c7"
           >
             <span
-              className="c7"
-              color="earnings"
-              size={undefined}
+              className="c8"
             >
               
               10.0
             </span>
             <span
-              className="c8"
-              size={undefined}
+              className="c9"
             >
               BAT
             </span>
           </span>
           <span
-            className="c9"
-            size={undefined}
+            className="c10"
           >
             0.25
              
             USD
           </span>
-        </span>
+        </div>
       </div>
     </div>
     <div
@@ -249,36 +258,35 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
       <div
         className="c5"
       >
-        <span
+        <div
+          className="c6"
+          color="earnings"
           id={undefined}
+          size="normal"
         >
           <span
-            className="c6"
+            className="c7"
           >
             <span
-              className="c7"
-              color="earnings"
-              size={undefined}
+              className="c8"
             >
               
               10.0
             </span>
             <span
-              className="c8"
-              size={undefined}
+              className="c9"
             >
               BAT
             </span>
           </span>
           <span
-            className="c9"
-            size={undefined}
+            className="c10"
           >
             0.25
              
             USD
           </span>
-        </span>
+        </div>
       </div>
     </div>
     <div
@@ -293,36 +301,35 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
       <div
         className="c5"
       >
-        <span
+        <div
+          className="c11"
+          color="contribute"
           id={undefined}
+          size="normal"
         >
           <span
-            className="c6"
+            className="c7"
           >
             <span
-              className="c10"
-              color="contribute"
-              size={undefined}
+              className="c8"
             >
               -
               10.0
             </span>
             <span
-              className="c8"
-              size={undefined}
+              className="c9"
             >
               BAT
             </span>
           </span>
           <span
-            className="c9"
-            size={undefined}
+            className="c10"
           >
             0.25
              
             USD
           </span>
-        </span>
+        </div>
       </div>
     </div>
     <div
@@ -337,36 +344,35 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
       <div
         className="c5"
       >
-        <span
+        <div
+          className="c12"
+          color="donation"
           id={undefined}
+          size="normal"
         >
           <span
-            className="c6"
+            className="c7"
           >
             <span
-              className="c11"
-              color="donation"
-              size={undefined}
+              className="c8"
             >
               -
               2.0
             </span>
             <span
-              className="c8"
-              size={undefined}
+              className="c9"
             >
               BAT
             </span>
           </span>
           <span
-            className="c9"
-            size={undefined}
+            className="c10"
           >
             0.25
              
             USD
           </span>
-        </span>
+        </div>
       </div>
     </div>
     <div
@@ -381,40 +387,39 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
       <div
         className="c5"
       >
-        <span
+        <div
+          className="c12"
+          color="donation"
           id={undefined}
+          size="normal"
         >
           <span
-            className="c6"
+            className="c7"
           >
             <span
-              className="c11"
-              color="donation"
-              size={undefined}
+              className="c8"
             >
               -
               19.0
             </span>
             <span
-              className="c8"
-              size={undefined}
+              className="c9"
             >
               BAT
             </span>
           </span>
           <span
-            className="c9"
-            size={undefined}
+            className="c10"
           >
             5.25
              
             USD
           </span>
-        </span>
+        </div>
       </div>
     </div>
     <div
-      className="c12"
+      className="c13"
       id={undefined}
     >
       <div
@@ -425,45 +430,44 @@ exports[`WalletSummary tests basic tests matches the snapshot 1`] = `
       <div
         className="c5"
       >
-        <span
+        <div
+          className="c14"
+          color="default"
           id={undefined}
+          size="normal"
         >
           <span
-            className="c6"
+            className="c7"
           >
             <span
-              className="c13"
-              color={undefined}
-              size={undefined}
+              className="c8"
             >
               
               19.0
             </span>
             <span
-              className="c8"
-              size={undefined}
+              className="c9"
             >
               BAT
             </span>
           </span>
           <span
-            className="c9"
-            size={undefined}
+            className="c10"
           >
             5.25
              
             USD
           </span>
-        </span>
+        </div>
       </div>
     </div>
   </div>
   <button
-    className="c14"
+    className="c15"
     onClick={[Function]}
   >
     <span
-      className="c15"
+      className="c16"
     >
       <svg
         height="16"

@@ -55,10 +55,15 @@ exports[`Tip tests basic tests matches the snapshot 1`] = `
 .c3 {
   position: relative;
   font-family: Poppins,sans-serif;
+  --donate-content-padding: 0 0 0 23px;
+  --donate-send-bg: #392dd1;
+  --donate-send-color: #fff;
+  --donate-send-padding: 13px 0 13px 51px;
+  --donate-funds-padding: 13px 0 14px 25px;
 }
 
 .c4 {
-  padding: 0 0 0 23px;
+  padding: var(--donate-content-padding);
 }
 
 .c5 {
@@ -74,15 +79,15 @@ exports[`Tip tests basic tests matches the snapshot 1`] = `
 }
 
 .c14 {
-  background: #392dd1;
+  background: var(--donate-send-bg);
   font-size: 13px;
   font-weight: 600;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  color: #fff;
-  padding: 13px 0 13px 51px;
+  color: var(--donate-send-color);
+  padding: var(--donate-send-padding);
   text-transform: uppercase;
   border: none;
   width: 100%;
@@ -178,6 +183,7 @@ exports[`Tip tests basic tests matches the snapshot 1`] = `
   </div>
   <div
     className="c3"
+    disabled={false}
   >
     <div
       className="c4"
@@ -237,8 +243,7 @@ exports[`Tip tests basic tests matches the snapshot 1`] = `
     </div>
     <button
       className="c14"
-      disabled={false}
-      onClick={undefined}
+      onClick={[Function]}
     >
       <span
         className="c15"

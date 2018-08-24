@@ -207,10 +207,15 @@ exports[`List tests basic tests matches the snapshot 1`] = `
 .c16 {
   position: relative;
   font-family: Poppins,sans-serif;
+  --donate-content-padding: 0 19px 0 55px;
+  --donate-send-bg: #4c54d2;
+  --donate-send-color: #fff;
+  --donate-send-padding: 16px 19px 16px 55px;
+  --donate-funds-padding: 13px 12px 13px 24px;
 }
 
 .c17 {
-  padding: 0 19px 0 55px;
+  padding: var(--donate-content-padding);
 }
 
 .c18 {
@@ -226,15 +231,15 @@ exports[`List tests basic tests matches the snapshot 1`] = `
 }
 
 .c24 {
-  background: #4c54d2;
+  background: var(--donate-send-bg);
   font-size: 13px;
   font-weight: 600;
   -webkit-letter-spacing: 0.2px;
   -moz-letter-spacing: 0.2px;
   -ms-letter-spacing: 0.2px;
   letter-spacing: 0.2px;
-  color: #fff;
-  padding: 16px 19px 16px 55px;
+  color: var(--donate-send-color);
+  padding: var(--donate-send-padding);
   text-transform: uppercase;
   border: none;
   width: 100%;
@@ -308,7 +313,7 @@ exports[`List tests basic tests matches the snapshot 1`] = `
   className="c0"
   id="list"
   onKeyUp={[Function]}
-  tabIndex="0"
+  tabIndex={0}
 >
   <div
     className="c1"
@@ -392,6 +397,7 @@ exports[`List tests basic tests matches the snapshot 1`] = `
         </div>
         <div
           className="c16"
+          disabled={false}
         >
           <div
             className="c17"
@@ -450,8 +456,7 @@ exports[`List tests basic tests matches the snapshot 1`] = `
           </div>
           <button
             className="c24"
-            disabled={false}
-            onClick={undefined}
+            onClick={[Function]}
           >
             <span
               className="c25"
