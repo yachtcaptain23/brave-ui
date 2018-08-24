@@ -54,7 +54,7 @@ exports[`Amount tests basic tests matches the snapshot 1`] = `
   <span
     className="c1"
     selected={undefined}
-    type={undefined}
+    type="small"
   >
     <span
       className="c2"
@@ -100,7 +100,7 @@ exports[`Amount tests basic tests matches the snapshot 1`] = `
   <span
     className="c4"
     selected={undefined}
-    type={undefined}
+    type="small"
   >
     MISSING: about
      
